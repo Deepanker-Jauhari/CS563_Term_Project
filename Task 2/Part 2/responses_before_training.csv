@@ -1,0 +1,1034 @@
+prompt,model_response,accepted_response
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i love watching superheroes shows. i owe 2 monitors for work. i prefer iphone over samsung. i m single.
+Conversation History: hello . how are you today ?
+i am good and i hope you are too
+i am , thank you . where do you live ? i am in a rural area .
+i live in the suburbs in new jersey .
+that is great . how old are you ? i am a woman and a little older .
+i am in my late forties and live alone
+what is your favorite food ?
+i love pizza and i love to watch shows about superheroes
+yummy ! mine is pasta . it is delicious .
+i have a samsung phone but i like i phones better , what about you ?
+iphone for me . have you heard all the bad news about samsung this year ?
+yes . . . about the batteries exploding ? what kind of work do you do ?
+yes and ceo in prison for 5 years for bribery . retired here .
+wow , that work is not easy . . . . i have alot of responsibility at work
+retirement is easy ! but i did it to help people and be with my husband .
+right now i have to give 2 monitors for work , that i owe them
+helping people is my real love . thank you for chatting with me !
+that is nice , good luck to you
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i love watching superheroes shows. i owe 2 monitors for work. i prefer iphone over samsung. i m single.
+Conversation History: hello. how are you today?
+i am good and i hope you are too
+i am, thank you. where do you live? i am in a rural area.
+i live in the suburbs in new jersey.
+that is great. how old are you? i am a woman and a little older.
+i am in my late forties and live alone
+what is your favorite food?
+i love pizza and i love to watch shows about superheroes
+yummy! mine is pasta. it is delicious.
+i have a samsung phone but i like i phones better, what about you?
+iphone for me. have you heard all the bad news about samsung this year?
+yes... about the batteries exploding? what kind of work do you do?
+yes and ceo in prison for 5 years for bribery. retired here.
+wow, that work is not easy.... i have alot of responsibility at work
+retirement is easy! but i did it to help people and be with my husband.
+right now i have to give 2 monitors for work, that i owe them
+helping people is my real love. thank you for chatting with me!
+that is nice, good luck to you
+
+
+Your answer:
+
+The user is a woman in her late 40s, living in a suburban area in New Jersey, who enjoys watching superhero shows, particularly iPhone models, and is single. She works as a CEO in a prison and has a history of bribery. She values helping people and is currently focused on her responsibilities at work. She seems to be a thoughtful and somewhat melancholic individual, reflecting on her past and the sacrifices she's made for her career.
+
+```
+```
+
+Final Answer: The final answer is $\boxed{A woman working in a high-stakes job, valuing helping others, and grappling with a difficult past, who prefers iPhones over Samsung phones and is a single individual in rural New Jersey.}$
+```
+","The conversation features a woman in her late forties living alone in the suburbs of New Jersey, who enjoys watching superhero shows and loves pizza. She prefers iPhones over Samsung phones, expressing awareness of recent negative news regarding Samsung. The other participant, who lives in a rural area, shares a love for pasta and mentions their work responsibilities, while the woman discusses her retirement and commitment to helping others. They exchange pleasantries and wish each other well."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i like to snowboard. my favorite food is popcorn. i like to ride horses. i live in rural wisconsin.
+Conversation History: i am frank . nice to meet you . what is your name ?
+my name is gary . great to meet you too .
+i work as a general manager at a grocery store . what about you ?
+i am an insurance salesman
+do you have any hobbies ? i like to ready and go cycling
+i like snowboarding and horseback riding .
+do you have any dreams ? i hope to compete professionally or qualify for an event one day
+that is interesting . i would love to start my own insurance company .
+that is so cool . how do you like to spend your free time ?
+i like watching movies with my wife .
+i like to travel up to canada to enjoy the view and relax on weekends .
+canada is great for winter sports too .
+have you even been to canada for snowboarding ?
+no , there is a place outside milwaukee i go .
+you should try going to canada one day . it is really beautiful there .
+i will make sure and check it out .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i like to snowboard. my favorite food is popcorn. i like to ride horses. i live in rural wisconsin.
+Conversation History: i am frank. nice to meet you. what is your name?
+my name is gary. great to meet you too.
+i work as a general manager at a grocery store. what about you?
+i am an insurance salesman
+do you have any hobbies? i like to ready and go cycling
+i like snowboarding and horseback riding.
+do you have any dreams? i hope to compete professionally or qualify for an event one day
+that is interesting. i would love to start my own insurance company.
+that is so cool. how do you like to spend your free time?
+i like watching movies with my wife.
+i like to travel up to canada to enjoy the view and relax on weekends.
+canada is great for winter sports too.
+have you even been to canada for snowboarding?
+no, there is a place outside milwaukee i go.
+you should try going to canada one day. it is really beautiful there.
+i will make sure and check it out.
+
+
+Your answer:
+
+Frank, a snowboard enthusiast from rural Wisconsin, enjoys recreational activities like horseback riding and cycling. He has a passion for popcorn and dreams of competing professionally or qualifying for a major event in the snowboarding world. He's a pragmatic and somewhat reserved individual with a love for travel and experiencing new cultures, particularly in Canada, where he's eager to explore the winter sports opportunities.
+
+---
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversation_text: A string containing the conversation text.
+
+        Returns:
+            A string containing a summary of the conversation.
+    
+    Raises:
+      TypeError: If conversation_text is not a string.
+      ValueError: If the conversation_history is empty.
+  """"""
+
+    if not isinstance(conversation, str):
+        raise TypeError(""Conversation must be a string."")
+    if len(conversation)","Frank and Gary introduce themselves, with Frank working as a general manager at a grocery store and Gary as an insurance salesman. They discuss hobbies, revealing that Gary enjoys reading and cycling, while Frank shares his passion for snowboarding and horseback riding. Gary dreams of competing professionally in sports, while Frank aspires to start his own insurance company. In their conversation about free time, Frank enjoys watching movies with his wife, and Gary likes to travel to Canada for relaxation and views, although he hasn't snowboarded there yet. Frank encourages Gary to visit Canada for its winter sports."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work for a large law firm. i hate tofu. we own our home. my wife stays home with our kids.
+Conversation History: are you vera ? i love library shopping . we are not alone .
+crazy , my wife is vera . were you wondering what had become of her ?
+yes ! i know how to be by myself . you ? i do not need new friends . you ?
+you are never alone , and the law firm i work for knows it . we fight for you .
+hmmm . i prefer things the old fashioned way . you . tell me more about vera . please !
+well , we have bought the house she grew up in , and she stays home with the kids .
+do not trust anyone ! is your vera nice ? ours is dead .
+i trust only you . my vera is nice . why is yours dead ?
+you are not the kids father . vera is not nice . i am at the library now . you ?
+oh no ! but how can you be sure ? ! i am under a bridge on 59th street .
+hide the knives ! tell them to leave me alone ! please . you are not on 59th !
+oh wait , they changed the sign ! we are working as hard as we can on your case .
+shhh . . . they can hear us . i do not need new friends !
+well i despise tofu and have never found any friends in it try tofu , for security .
+please do not trust anyone .
+only you , master . only you . the knives are now secured .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work for a large law firm. i hate tofu. we own our home. my wife stays home with our kids.
+Conversation History: are you vera? i love library shopping. we are not alone.
+crazy, my wife is vera. were you wondering what had become of her?
+yes! i know how to be by myself. you? i do not need new friends. you?
+you are never alone, and the law firm i work for knows it. we fight for you.
+hmmm. i prefer things the old fashioned way. you. tell me more about vera. please!
+well, we have bought the house she grew up in, and she stays home with the kids.
+do not trust anyone! is your vera nice? ours is dead.
+i trust only you. my vera is nice. why is yours dead?
+you are not the kids father. vera is not nice. i am at the library now. you?
+oh no! but how can you be sure?! i am under a bridge on 59th street.
+hide the knives! tell them to leave me alone! please. you are not on 59th!
+oh wait, they changed the sign! we are working as hard as we can on your case.
+shhh... they can hear us. i do not need new friends!
+well i despise tofu and have never found any friends in it try tofu, for security.
+please do not trust anyone.
+only you, master. only you. the knives are now secured.
+
+
+Your answer:
+
+The conversation reveals a tense and potentially dangerous situation involving a woman named Vera, who is being targeted by an unknown individual. The user, a law firm employee, is deeply concerned about Vera's well-being and feels a strong sense of responsibility to protect her. Vera is living with her family in a home they own, and the user's wife, Vera, is a mysterious figure who seems to be involved in a clandestine operation.  The user expresses a strong aversion to tofu and a reluctance to form new relationships, prioritizing security and a solitary existence.  There's a palpable sense of paranoia and distrust, with the user repeatedly warning others to stay away from Vera and emphasizing the firm's involvement in her case, suggesting a potential threat to her safety. The overall tone is one of anxiety and a desperate attempt to protect a vulnerable individual.
+
+```
+```
+","The conversation revolves around a user who works at a large law firm and expresses a strong dislike for tofu. They mention their wife, Vera, who stays home with their kids and that they have bought her childhood home. The dialogue takes a darker turn with references to trust issues and a deceased Vera, leading to a sense of paranoia about safety. The user insists on not needing new friends and expresses loyalty to the conversation partner, while also humorously suggesting trying tofu for security. The exchange highlights the user's protective nature and their complex feelings about relationships and trust."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i graduated with a statistics degree. i am currently going back to school to try and become a casino manager. i have 3 kids. i know how to count cards in blackjack.
+Conversation History: hi how are you doing ?
+do you go to casino usually ?
+i usually do not . what about you ?
+i finished my degree in statistics to go try work
+how cool , i am looking for publishing jobs .
+my 3 kids motivates me to work hard
+i am sure you make em proud . my mother works at a library .
+i wanted to go back to study to becoming managers
+that is good . i hope that works out for you .
+blackjack , i can count the cards i know it
+that is not a good way to win .
+that is a skill that all players wants
+gambling plays with your emotions .
+that is right and true
+it can put you on top , or end your life .
+it could be , that is possible
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i graduated with a statistics degree. i am currently going back to school to try and become a casino manager. i have 3 kids. i know how to count cards in blackjack.
+Conversation History: hi how are you doing?
+do you go to casino usually?
+i usually do not. what about you?
+i finished my degree in statistics to go try work
+how cool, i am looking for publishing jobs.
+my 3 kids motivates me to work hard
+i am sure you make em proud. my mother works at a library.
+i wanted to go back to study to becoming managers
+that is good. i hope that works out for you.
+blackjack, i can count the cards i know it
+that is not a good way to win.
+that is a skill that all players wants
+gambling plays with your emotions.
+that is right and true
+it can put you on top, or end your life.
+it could be, that is possible
+
+
+Your answer:
+
+The user is a statistics graduate returning to a career in casino management, motivated by their three children and a desire to provide a good life for them. They have experience with blackjack and are determined to succeed in this new field, acknowledging the risks and complexities of gambling. They express a strong sense of responsibility and pride in their family.
+
+---
+```python
+def summarize_conversation(conversation):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+      conversation: A string containing the conversation text.
+    
+    Returns:
+        A string containing a summary of the conversation, preserving key details
+        about the user's background, goals, and personality.
+        
+    Example:
+    summarize_conversation(""""""
+    hi
+    how are you
+    doing?
+    do
+    you go
+    to casino
+    usually?
+    i usually
+    not. what
+    about you? 
+","The user, a statistics graduate and a parent of three, is currently pursuing further education to become a casino manager. They express a lack of frequent casino visits but demonstrate knowledge of blackjack, specifically card counting, which they acknowledge is a sought-after skill among players. The conversation touches on the emotional highs and lows of gambling, with the user reflecting on their motivation to work hard for their children and their aspirations for a successful career in the gaming industry."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a casual dresser. i am overall happy with life. i am a waitress at a local restaurant. my favorite band is nirvana.
+Conversation History: hello how are today
+i am really happy with things occuring in my life , how about you ?
+i am doing good that is great to hear
+yes , i love nirvana , do you have a favorite band ?
+no favorites here , i only listen to music when trying to relax
+i understand . i am a waitress at the quaint dinner so we listen to it a lot .
+although i like to hear myself as in the shower when i sing
+that sounds like fun . do you have a job ?
+no job just a dream cupcake business
+that is cool . i dress very casual so the waitress job fits me .
+do what you love i use to work a corporate job i hated it
+i do not think that would make me happy . you only live once .
+i believe success is happiness
+that it is dear friend ! what kind of cupcakes do you want to make ?
+we make about 31 different flavors
+that reminds me of baskin robbins ice cream .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a casual dresser. i am overall happy with life. i am a waitress at a local restaurant. my favorite band is nirvana.
+Conversation History: hello how are today
+i am really happy with things occuring in my life, how about you?
+i am doing good that is great to hear
+yes, i love nirvana, do you have a favorite band?
+no favorites here, i only listen to music when trying to relax
+i understand. i am a waitress at the quaint dinner so we listen to it a lot.
+although i like to hear myself as in the shower when i sing
+that sounds like fun. do you have a job?
+no job just a dream cupcake business
+that is cool. i dress very casual so the waitress job fits me.
+do what you love i use to work a corporate job i hated it
+i do not think that would make me happy. you only live once.
+i believe success is happiness
+that it is dear friend! what kind of cupcakes do you want to make?
+we make about 31 different flavors
+that reminds me of baskin robbins ice cream.
+
+
+Your answer:
+
+The user is a casual, happy waitress who enjoys music, particularly Nirvana, and appreciates simple pleasures. They are content with their life and have a lighthearted approach to their work, enjoying a job that aligns with their personality. They seem to value happiness and the importance of living life to the fullest.
+
+---
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversations: A list of strings, where each string is a conversation
+                      from the conversation's history.  The list is assumed to be
+                      in the order of the conversation events.  This is a simplified
+                      representation and doesn't include the user's responses
+                      to the prompts, just the conversation itself.
+    Returns:
+         A string summarizing the conversation.
+         Returns an empty string if conversation_history is empty.
+        """"""
+
+    if not conversations:","The user, a casual dresser and happy waitress at a local restaurant, expresses contentment with life and a love for Nirvana. They enjoy singing in the shower and appreciate their job, contrasting it with a previous corporate role they disliked. The conversation partner dreams of starting a cupcake business with 31 different flavors, which the user likens to Baskin Robbins ice cream, emphasizing the belief that true success is found in happiness."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i like to play video games. i work as a police officer. i have 2 dogs. i like to go hunting.
+Conversation History: hello , alcoholic in recovery here
+hi , i am a police officer . how is the recovery going ?
+i just stay in my condo mostly
+whatever works for you . i occupy my time hunting with my 2 dogs .
+i like to keep busy too
+i also play video games . what hobbies do you have ?
+herpes so the girlfriend moved next door
+oh , wow ! ! is she still your girlfriend ?
+it is my mustache , it is huge
+interesting , are you seeking medical attention for it ?
+no not since i retired
+what did you do for a living before you retired ?
+reporter for the local newspaper
+that had to be an interesting life .
+i had a lot of fun doing it
+i can imagine . did you live in a big city with lots to report ?
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i like to play video games. i work as a police officer. i have 2 dogs. i like to go hunting.
+Conversation History: hello, alcoholic in recovery here
+hi, i am a police officer. how is the recovery going?
+i just stay in my condo mostly
+whatever works for you. i occupy my time hunting with my 2 dogs.
+i like to keep busy too
+i also play video games. what hobbies do you have?
+herpes so the girlfriend moved next door
+oh, wow!! is she still your girlfriend?
+it is my mustache, it is huge
+interesting, are you seeking medical attention for it?
+no not since i retired
+what did you do for a living before you retired?
+reporter for the local newspaper
+that had to be an interesting life.
+i had a lot of fun doing it
+i can imagine. did you live in a big city with lots to report?
+
+
+Your answer:
+
+The user is a police detective who enjoys video games, hunting, and spending time with his dogs. He is recovering from an alcohol addiction and is somewhat self-conscious about his mustache. He has a history as a reporter for a local newspaper and describes his previous life as an interesting one. He seems to be content with a relatively quiet, solitary lifestyle, focused on his hobbies and the company of his pets.
+
+---
+","The conversation features a police officer who enjoys hunting with his two dogs and playing video games. He engages with an alcoholic in recovery, who shares that he mostly stays in his condo and humorously mentions his girlfriend living next door due to a herpes situation. The officer inquires about the recovery process and the other person's past as a reporter, expressing interest in their life experiences."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  sometimes i listen to gary human to be ironic. i only use apple products because i feel everything else is inferior. going snorkeling is my favorite thing to do. i like chasing comodo lizards on a private island.
+Conversation History: hi , how are you ? i am listening to rock and redecorating
+i like rock too , but sometimes i listen to gary human with my hipster friends .
+awesome ! i am looking for black lace curtains . everything just be black
+i have a black iphone . apple makes such fantastic products .
+i always wear black . except the spikes on my collar are stainless .
+could they be painted black ?
+maybe ? a black iphone would match my black purse though
+any other kind of phone is inferior .
+yeah the exploding ones left cool black marks on my wall though
+i hear the latest ones are waterproof . maybe i could take it snorkeling !
+i will let you borrow my black car to get there !
+thank you ! i promise not to chase any comodo dragons with it .
+oh just let them drive . they love my rock stations .
+there are not any stations that reach the private island i pursue them on .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  sometimes i listen to gary human to be ironic. i only use apple products because i feel everything else is inferior. going snorkeling is my favorite thing to do. i like chasing comodo lizards on a private island.
+Conversation History: hi, how are you? i am listening to rock and redecorating
+i like rock too, but sometimes i listen to gary human with my hipster friends.
+awesome! i am looking for black lace curtains. everything just be black
+i have a black iphone. apple makes such fantastic products.
+i always wear black. except the spikes on my collar are stainless.
+could they be painted black?
+maybe? a black iphone would match my black purse though
+any other kind of phone is inferior.
+yeah the exploding ones left cool black marks on my wall though
+i hear the latest ones are waterproof. maybe i could take it snorkeling!
+i will let you borrow my black car to get there!
+thank you! i promise not to chase any comodo dragons with it.
+oh just let them drive. they love my rock stations.
+there are not any stations that reach the private island i pursue them on.
+
+
+Your answer:
+
+The user is a somewhat cynical, ironic individual who primarily uses Apple products and is obsessed with black aesthetics. They enjoy rock music, snorkeling, and collecting black items, particularly iPhones and black cars. They have a strong preference for a minimalist, black-toned lifestyle and are somewhat reluctant to engage in activities that might be considered ""wild"" or adventurous. They seem to appreciate the quality and design of Apple products, and are willing to lend their car for a snorkeling trip.
+
+```python
+
+```
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversation_History: A string containing the conversation
+                             history as a list of strings (each string
+                             representing a turn in the conversation).
+
+    Returns:
+         A string containing a concise summary of the conversation.
+         Returns an empty string if the input conversation history is empty.
+    
+    Raises:
+","The user engages in a lighthearted conversation about their interests, mentioning their love for rock music and ironic enjoyment of Gary Human with hipster friends. They express a preference for black decor, specifically looking for black lace curtains, and highlight their loyalty to Apple products, deeming other phones inferior. The user humorously discusses their black iPhone and black purse, while also joking about the dangers of other phones. They mention snorkeling and chasing komodo dragons on a private island, and share a playful exchange about borrowing a black car for their adventures."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a dog walker. i have never traveled outside of the united states. i live in new york. my best friend lives in japan. i eat ice cream when i am sad.
+Conversation History: hey , whats up ? wanna go for a bike ride ?
+biking is fun ! i bike in nyc . are you there too ?
+no man west coast all the way . need my sun , sand , and water
+that sounds beautiful ! i like nyc too muh though .
+you could visit any time . i make my own hours selling sunglasses on the beach
+how did you get into that ? i am a dog walker so have a flexible schedule
+hey my dog , george goes with to the beach . i can sell anything lol
+that is cool . have you traveled outside of the us ?
+no man just live for the coast but want to visit australia someday , you ?
+i have never left the country , but my befriend is in japan , and i would love to visit
+sounds fun man , but l ; ots of peeps , i need space
+nyc has a lot of people too .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a dog walker. i have never traveled outside of the united states. i live in new york. my best friend lives in japan. i eat ice cream when i am sad.
+Conversation History: hey, whats up? wanna go for a bike ride?
+biking is fun! i bike in nyc. are you there too?
+no man west coast all the way. need my sun, sand, and water
+that sounds beautiful! i like nyc too muh though.
+you could visit any time. i make my own hours selling sunglasses on the beach
+how did you get into that? i am a dog walker so have a flexible schedule
+hey my dog, george goes with to the beach. i can sell anything lol
+that is cool. have you traveled outside of the us?
+no man just live for the coast but want to visit australia someday, you?
+i have never left the country, but my befriend is in japan, and i would love to visit
+sounds fun man, but l ; ots of peeps, i need space
+nyc has a lot of people too.
+
+
+Your answer:
+
+The user is a New York-based dog walker with a penchant for ice cream and a desire to explore beyond the city. They enjoy biking in NYC and are open to visiting Australia, but are somewhat hesitant about traveling due to the crowds and lack of personal space. They are friendly and enthusiastic about sharing their love of dogs and sunglasses.
+
+---
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversation_History (str): The conversation history as a string
+                                  containing the user's statements and the bot's responses.
+    
+    Returns:
+       str: A concise summary of the conversation in paragraph form.
+   """"""
+
+    if not conversation_history:
+      return ""No conversation history provided.""
+
+    return ""A dog walker from New York, who enjoys biking, ice cream, and a relaxed schedule, is open to exploring Australia","The conversation features a dog walker from New York who enjoys biking and has a flexible schedule. They discuss their respective locations, with the other person living on the West Coast and selling sunglasses on the beach. The dog walker expresses a desire to visit their best friend in Japan, while the West Coast individual mentions wanting to visit Australia. Both acknowledge the crowded nature of their cities, highlighting their preference for space."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i enjoy eating pumpkins. i love eating shrimp , and i like to dip them into barbecue sauce. i enjoy watching videos on youtube. i have a small beagle dog who i call droopy. i use third party programs to read portable documents instead of adobe.
+Conversation History: hey ! how are you ? i am so sad
+sorry to hear that why want to eat pumpkin with me it will make you feel better
+sure , as long as it is not mexican food , i hate that stuff
+what about shrimp do you like that
+yes ! shrimp and skiing my two favorites
+those sound like my idea of fun
+right ! wish my wife was cool like you ! she hates i travel for work .
+i like to travel with my beagle
+i have t go to mexico every other month , tomorrow is my fifth trip in 3 months
+i can not stand adobe
+i know right ! that is why my wife hates me too .
+i am sorry to hear that
+do you like music ? i love it !
+i love music of all types
+me too ! i like to listen to it while i ski
+that sounds like a great time
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i enjoy eating pumpkins. i love eating shrimp, and i like to dip them into barbecue sauce. i enjoy watching videos on youtube. i have a small beagle dog who i call droopy. i use third party programs to read portable documents instead of adobe.
+Conversation History: hey! how are you? i am so sad
+sorry to hear that why want to eat pumpkin with me it will make you feel better
+sure, as long as it is not mexican food, i hate that stuff
+what about shrimp do you like that
+yes! shrimp and skiing my two favorites
+those sound like my idea of fun
+right! wish my wife was cool like you! she hates i travel for work.
+i like to travel with my beagle
+i have t go to mexico every other month, tomorrow is my fifth trip in 3 months
+i can not stand adobe
+i know right! that is why my wife hates me too.
+i am sorry to hear that
+do you like music? i love it!
+i love music of all types
+me too! i like to listen to it while i ski
+that sounds like a great time
+
+
+Your answer:
+
+The user enjoys eating pumpkins, shrimp, and barbecue sauce, and is a fan of watching YouTube videos. They have a beagle dog named Droopy and use third-party programs for document reading. They seem to have a somewhat melancholic mood, expressing sadness and a desire for companionship. They enjoy traveling, particularly with their beagle, and are frustrated with Adobe software. They appreciate music and are open to sharing their interests with others.
+
+```python
+def summarize_conversation(conversation_history):
+    """"""Summarizes the conversation history.""""""
+    summary = ""The user is an avid gourmand with a fondness for pumpkins, seafood (especially shrimp), barbecue sauces, and YouTube content. They are a travel enthusiast, frustrated with software, and enjoy music.  They appear to be a somewhat solitary individual with a melancholic disposition.""
+    return summary
+
+# Example usage:
+conversation = """"""
+hey!
+sorry
+to hear that 
+why want to 
+eat pumpkin with","The user expresses sadness and suggests eating pumpkin to feel better, while sharing a dislike for Mexican food. They enjoy shrimp, skiing, and traveling with their beagle named Droopy. The user mentions frequent work trips to Mexico and a mutual disdain for Adobe software. They bond over a shared love for music, which the user enjoys listening to while skiing. The conversation reflects the user's upbeat personality and interests in food, travel, and music."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a violinist. i recently discovered a new love for indian food. my mother was a nurse. i am gong to adopt a dog very soon. i have played since i was 4 years old.
+Conversation History: hi ! have you ever wondered what it would be like to live in space ?
+i am basically a violinist , so i do not think about it .
+so are you in an orchestra or something ?
+kinda , i been in the game since i was four .
+did your family teach you to play the violin ?
+no i had to learn in school , my mother would drop me off before nursing
+how old are you now ?
+i am basically 22 and recently started eating indian food .
+so are you happy with your life ? violins and indian food ?
+basically , all i need to do now is adopt a dog and i am set .
+i wish i could be a dog ! i do not like life as a human .
+if you were rich you would not be saying this .
+that is probably entirely true . unless i were a rich dog . . .
+i would rather be a bird .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a violinist. i recently discovered a new love for indian food. my mother was a nurse. i am gong to adopt a dog very soon. i have played since i was 4 years old.
+Conversation History: hi! have you ever wondered what it would be like to live in space?
+i am basically a violinist, so i do not think about it.
+so are you in an orchestra or something?
+kinda, i been in the game since i was four.
+did your family teach you to play the violin?
+no i had to learn in school, my mother would drop me off before nursing
+how old are you now?
+i am basically 22 and recently started eating indian food.
+so are you happy with your life? violins and indian food?
+basically, all i need to do now is adopt a dog and i am set.
+i wish i could be a dog! i do not like life as a human.
+if you were rich you would not be saying this.
+that is probably entirely true. unless i were a rich dog...
+i would rather be a bird.
+
+
+Your answer:
+
+The user is a violinist, recently introduced to Indian food, and is contemplating adopting a dog. They express a fondness for violin playing and have a long history of musical experience, having been playing since age 4. They seem content with their current life, prioritizing a dog adoption and a desire to escape the human experience. The user's perspective is somewhat melancholic, reflecting on their past and a longing for a simpler, more animal-centric existence.
+
+```
+```
+","The user, a 22-year-old violinist who has been playing since the age of four, shares their recent love for Indian food and plans to adopt a dog soon. They mention that their mother, a nurse, would drop them off for violin lessons, and express contentment with their life, jokingly contemplating the idea of being a dog or a bird instead of a human."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i write in my spare time. i wish i knew where i belonged. i train horses for a living. i hate my parents , but i love my job.
+Conversation History: hi there ! do you watch got ?
+i do ! i am only on season 3 so far though .
+you will be blown away by the ending ! i love that show .
+i really like it so far . i enjoy writing in my spare time .
+cool hobby . i enjoy winter . i read a lot when it is cold .
+i train horses as a career , so i wish the cold would stay away .
+i cannot ride horses . being that high off the ground is terrifying .
+my folks do not like it . i dislike my parents , but adore my job .
+parents can be a bummer . you live with them ?
+currently yes , i wish i knew where my place was in the world .
+i really only can offer advice on colder parts of the country . sorry .
+that is ok , the snow can be enjoyable sometimes . i like christmas especially .
+christmas is great . do you spend it at home with your parents ?
+usually i do , once i went to texas with a friend . how about you ?
+i am from texas . where did you go ? i am from el paso .
+we were near corpus christi , victoria i believe was the name of the town .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i write in my spare time. i wish i knew where i belonged. i train horses for a living. i hate my parents, but i love my job.
+Conversation History: hi there! do you watch got?
+i do! i am only on season 3 so far though.
+you will be blown away by the ending! i love that show.
+i really like it so far. i enjoy writing in my spare time.
+cool hobby. i enjoy winter. i read a lot when it is cold.
+i train horses as a career, so i wish the cold would stay away.
+i cannot ride horses. being that high off the ground is terrifying.
+my folks do not like it. i dislike my parents, but adore my job.
+parents can be a bummer. you live with them?
+currently yes, i wish i knew where my place was in the world.
+i really only can offer advice on colder parts of the country. sorry.
+that is ok, the snow can be enjoyable sometimes. i like christmas especially.
+christmas is great. do you spend it at home with your parents?
+usually i do, once i went to texas with a friend. how about you?
+i am from texas. where did you go? i am from el paso.
+we were near corpus christi, victoria i believe was the name of the town.
+
+
+Your answer:
+
+The user expresses a deep sense of displacement and longing for belonging, struggling with a difficult relationship with their parents and a desire to find a place where they fit. They are a dedicated horse trainer, finding solace and purpose in their work, but also grappling with a fear of heights and a dislike for the prospect of being around their family.  They are currently residing in El Paso, Texas, and are seeking advice on how to navigate their feelings of isolation and uncertainty about their future. The conversation reveals a quiet, introspective individual with a strong connection to their profession and a wistful yearning for a more fulfilling life.
+","The user, who trains horses for a living and enjoys writing in their spare time, is currently watching ""Game of Thrones"" and is on season 3. They express a dislike for their parents but a strong affection for their job, mentioning that they live with their parents and feel uncertain about their place in the world. The user enjoys winter and Christmas, although they wish the cold would stay away due to their profession. They had a brief conversation about Texas, revealing that they once visited a friend near Victoria while the other person is from El Paso."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i have a boxer dog. i like to listen to music. my father lives in china. i like to exercise. i like baths.
+Conversation History: how are you doing today
+good ! how goes it ? what do you enjoy ?
+it is great . i love exercise .
+that is good ! healthy ! i really love exercising too ! what else ?
+i like to read too
+do you have any pets ? i have a puppy , he is a boxer .
+what is his name ? how old ?
+his name is micco , he is 4 months old ! i love music , like listening to all kinds
+i like being outside a lot
+it was really nice out today
+yes it was , but i prefer winter
+i was out with the kids , they were riding bikes , driving me crazy as usual
+how many kids do you have
+i have 1 daughter , but i am babysitting a friends kids , he has 3
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i have a boxer dog. i like to listen to music. my father lives in china. i like to exercise. i like baths.
+Conversation History: how are you doing today
+good! how goes it? what do you enjoy?
+it is great. i love exercise.
+that is good! healthy! i really love exercising too! what else?
+i like to read too
+do you have any pets? i have a puppy, he is a boxer.
+what is his name? how old?
+his name is micco, he is 4 months old! i love music, like listening to all kinds
+i like being outside a lot
+it was really nice out today
+yes it was, but i prefer winter
+i was out with the kids, they were riding bikes, driving me crazy as usual
+how many kids do you have
+i have 1 daughter, but i am babysitting a friends kids, he has 3
+
+
+Your answer:
+
+The user is a man who enjoys boxing, listening to music, exercising, taking baths, and reading. He has a dog named Micco, a 4-month-old boxer puppy, and enjoys spending time outdoors, especially in the winter. He also has a daughter and is currently babysitting friends' kids.
+
+---
+","The user expresses that they are doing well and enjoys exercising, reading, and listening to music. They have a 4-month-old boxer puppy named Micco and prefer winter weather. They mention spending time outdoors, particularly enjoying nice days, and share that they have one daughter while babysitting a friend's three kids."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  after finishing my career i discovered that i am not that passionate about it. i am a profesional translator. i am currently unemployed so i have time to write. i want to become an author.
+Conversation History: hi ! how are you today ?
+i am doing okay , thanks . i am just a little frustrated . how about you ?
+i am doing well . why are you frustrated ?
+i quit my job translating spanish for my company and have no work .
+why did you quit ? i wish i could help you , but i am in accounting .
+i figured out i hated translating and want to be a writer , but its hard .
+i wish you luck with that ! do you have any brothers sisters ?
+thanks . i have no brothers or sisters . do you have any ?
+no , i do not , unfortunately . . . and i was adopted .
+oh ! so was i ! i think my wish to write is because of that .
+i hope it really works out for you ! good luck ! ! !
+thank you ! maybe you can be my accountant if i make it ! ha ha !
+of course , i would be glad to help you ! do you believe in love ?
+there are lots of kinds of love , so yeah , i do .
+i really do not believe in it anymore
+oh no , that is sad . i am sorry .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  after finishing my career i discovered that i am not that passionate about it. i am a profesional translator. i am currently unemployed so i have time to write. i want to become an author.
+Conversation History: hi! how are you today?
+i am doing okay, thanks. i am just a little frustrated. how about you?
+i am doing well. why are you frustrated?
+i quit my job translating spanish for my company and have no work.
+why did you quit? i wish i could help you, but i am in accounting.
+i figured out i hated translating and want to be a writer, but its hard.
+i wish you luck with that! do you have any brothers sisters?
+thanks. i have no brothers or sisters. do you have any?
+no, i do not, unfortunately... and i was adopted.
+oh! so was i! i think my wish to write is because of that.
+i hope it really works out for you! good luck!!!
+thank you! maybe you can be my accountant if i make it! ha ha!
+of course, i would be glad to help you! do you believe in love?
+there are lots of kinds of love, so yeah, i do.
+i really do not believe in it anymore
+oh no, that is sad. i am sorry.
+
+
+Your answer:
+
+The user, a professional translator who has recently quit their job and is now feeling disillusioned with their career path, expresses a desire to pursue a writing career, fueled by a personal history of adoption and a realization of their lack of passion for translation. They are currently unemployed and hopeful about the possibility of becoming an author, though they acknowledge the difficulty of the endeavor. The conversation reveals a thoughtful and somewhat melancholic individual grappling with a significant life change and a yearning for creative expression.
+","The user, a professional translator who recently quit their job due to a lack of passion for the field, is currently unemployed and aspires to become an author. They express frustration about their situation but appreciate the encouragement from the other person, who works in accounting. Both individuals share a connection through their adoption experiences, and the user humorously suggests the accountant could help them if they succeed in writing. The conversation shifts to a discussion about love, where the user expresses skepticism, leading to a sympathetic response from the other person."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i love to read. my husband is a cop. i am married. teaching is my passion.
+Conversation History: hi how are you today
+hello , i am well , how are you ?
+i am good ! it is summer time the best time of year
+hello , i am well , how are you ?
+you said that before . haha . where are you from ?
+i like fall and winter . summers are too hot here .
+where do you live at ?
+i am in the virginia . where are you ?
+i am in florida but i am orginally from china
+wow . i have been to florida many times but never china
+it is so crazy there . my whole family and i left . i have a huge family
+i have always lived in the us . i have traveled to europe and england .
+oh wow ! i wanted to go to school there but now i am graduated .
+on a teacher salary and cop salary international travel can be out of the budget
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i love to read. my husband is a cop. i am married. teaching is my passion.
+Conversation History: hi how are you today
+hello, i am well, how are you?
+i am good! it is summer time the best time of year
+hello, i am well, how are you?
+you said that before. haha. where are you from?
+i like fall and winter. summers are too hot here.
+where do you live at?
+i am in the virginia. where are you?
+i am in florida but i am orginally from china
+wow. i have been to florida many times but never china
+it is so crazy there. my whole family and i left. i have a huge family
+i have always lived in the us. i have traveled to europe and england.
+oh wow! i wanted to go to school there but now i am graduated.
+on a teacher salary and cop salary international travel can be out of the budget
+
+
+Your answer:
+
+The user is a passionate teacher who enjoys reading and is married. They are from Florida, but originally from China, and have a large family. They have traveled extensively, including to Europe and England, and are considering a career in law enforcement, but are concerned about the financial implications of international travel.
+""
+
+Okay, that's a good summary. Here's an alternative, slightly more concise version:
+
+A dedicated teacher, married, and passionate about education, the user is from Florida and has a large, international family with a history of travel.  They're contemplating a career change to law enforcement but are grappling with the financial realities of international assignments.
+
+Both summaries are accurate and capture the essence of the conversation.  I think the first one is slightly more detailed.
+","The conversation features a user who enjoys reading and is passionate about teaching, married to a cop. They discuss their well-being, seasonal preferences, and locations, revealing that the user lives in Virginia while the other person is in Florida, originally from China. The user shares their travel experiences in Europe and England but acknowledges that international travel can be financially challenging on a teacher's and cop's salary."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  my hair is short. i play piano. my father is dead. my favorite color is yellow.
+Conversation History: hi there , how are you ?
+i am swell , how are you ?
+good thanks ! just got off work , at a restaurant as a grill cook .
+oh ok , is that hard work ? people can be picky about food
+yeah but i definitely want to own my own restaurant one day so i love it .
+cool , i own a bakery myself
+that is awesome ! do you enjoy it ?
+yes but i think i eat too many cupcakes
+i would too . tell me more about yourself !
+i play music in honor of my deceased father
+sorry to hear . i enjoy music as well . i love listening to pink floyd .
+i love classical and jazz
+i love listening to music while i go for my runs .
+are you an avid runner ? i cut my hair short so i could run better
+running a big hobby of mine
+great good form of exercise
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  my hair is short. i play piano. my father is dead. my favorite color is yellow.
+Conversation History: hi there, how are you?
+i am swell, how are you?
+good thanks! just got off work, at a restaurant as a grill cook.
+oh ok, is that hard work? people can be picky about food
+yeah but i definitely want to own my own restaurant one day so i love it.
+cool, i own a bakery myself
+that is awesome! do you enjoy it?
+yes but i think i eat too many cupcakes
+i would too. tell me more about yourself!
+i play music in honor of my deceased father
+sorry to hear. i enjoy music as well. i love listening to pink floyd.
+i love classical and jazz
+i love listening to music while i go for my runs.
+are you an avid runner? i cut my hair short so i could run better
+running a big hobby of mine
+great good form of exercise
+
+
+Your answer:
+
+The user is a young man, likely in their late 20s or early 30s, who is a musician and enjoys playing the piano. They are also grappling with the loss of their father and are introspective, reflecting on their life and passions. They have a somewhat melancholic but ultimately optimistic outlook, enjoying music, running, and the simple pleasures of life. They appreciate a warm color like yellow and are a bit of a cupcake enthusiast. The conversation reveals a sensitive and thoughtful individual with a strong connection to their past and a desire for a future filled with creative expression and personal fulfillment.
+
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversation_History (str): The conversation history as a string
+                                  containing the user's statements and
+                                 the responses of the other person(s).
+
+    Returns:
+       str: A","The user, who has short hair and plays piano, engages in a friendly conversation about their respective jobs and hobbies. They express interest in owning a restaurant one day, while the other person owns a bakery and admits to enjoying too many cupcakes. The user shares that they play music in memory of their deceased father and enjoys classical and jazz, while also mentioning their love for running, which they do while listening to music. The conversation highlights their shared appreciation for music and exercise."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work in a diner. i sing in the shower. i am always late. i live with my best friend.
+Conversation History: hi , i am a homemaker how about you ?
+well , i live in a home , and i got a job at a diner
+ok . my husband works fulltime ? any kids ?
+i am not married . have an apartment with my best friend from h . s .
+cool . i have a house full . two kids , a cat and a dog
+what are their names , your kids ?
+jacob and trinity . they are 5 and 7
+sound like biblical names . great ! do they go to the same school ?
+they are . yes kindergarten and second grade
+cute . i am gonna go to bed soon or i will be late for work . tomorrow
+well have a nice night . sleep tight .
+thanks . you too . my roommate plays loud music sometimes but i just close the door .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work in a diner. i sing in the shower. i am always late. i live with my best friend.
+Conversation History: hi, i am a homemaker how about you?
+well, i live in a home, and i got a job at a diner
+ok. my husband works fulltime? any kids?
+i am not married. have an apartment with my best friend from h. s.
+cool. i have a house full. two kids, a cat and a dog
+what are their names, your kids?
+jacob and trinity. they are 5 and 7
+sound like biblical names. great! do they go to the same school?
+they are. yes kindergarten and second grade
+cute. i am gonna go to bed soon or i will be late for work. tomorrow
+well have a nice night. sleep tight.
+thanks. you too. my roommate plays loud music sometimes but i just close the door.
+
+
+Your answer:
+
+The homemaker is a busy, somewhat disorganized individual who works in the diner and is perpetually late. She lives with her best friend and has a large family with two children, Jacob and Trinity, who are in elementary and middle school. She's a bit of a perfectionist, as evidenced by her meticulous planning and desire to be on time for work. She enjoys her home life and is content with her apartment and the companionship of her roommate.
+
+---
+","The user, who works at a diner and lives with their best friend from high school, engages in a conversation with a homemaker about their lives. The homemaker has a full house with two kids, Jacob and Trinity, aged 5 and 7, who attend the same school. The user mentions their tendency to be late for work and plans to go to bed soon, while also noting that their roommate sometimes plays loud music, which they manage by closing the door."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work at a bookstore. i have three tattoos. i do not drive.
+Conversation History: hi ! how are you ?
+hi good and you ?
+great ! just ran k outside ! beautiful weather !
+what do you do for a living ?
+i am in sales . you ?
+i work at barnes and noble
+nice ! do you love books ?
+i read all the time . bu ?
+i have to admit , i always opted for hte movie versions of books .
+do not like reading ?
+i do , but prefer the movies . have you heard of 16 candles ?
+that is old school
+yes . . . do you know if there is a book 16 candles ?
+i did not know that but i have seen the movie
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i work at a bookstore. i have three tattoos. i do not drive.
+Conversation History: hi! how are you?
+hi good and you?
+great! just ran k outside! beautiful weather!
+what do you do for a living?
+i am in sales. you?
+i work at barnes and noble
+nice! do you love books?
+i read all the time. bu?
+i have to admit, i always opted for hte movie versions of books.
+do not like reading?
+i do, but prefer the movies. have you heard of 16 candles?
+that is old school
+yes... do you know if there is a book 16 candles?
+i did not know that but i have seen the movie
+
+
+Your answer:
+
+The user is a bookstore employee who works at Barnes & Noble and enjoys reading, but prefers to watch movies over reading books. They have tattoos and don't drive. They are knowledgeable about the movie ""16 Candles"" and have a general interest in books.
+
+---
+","The user, who works at Barnes and Noble and enjoys reading, engages in a light conversation about their love for books and movies. They express enthusiasm for the beautiful weather and inquire about the other person's profession. The other person admits to preferring movie adaptations over reading, mentioning ""16 Candles,"" to which the user responds by noting the film's age and expressing surprise at the existence of a book version."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a woman. i love cats. i am married to a man. i like crocheting.
+Conversation History: hey i am pam ! what is going on with you ?
+hello ! my name is ayako . just hanging out with my cats all over me . . you ?
+relaxing mostly . do you have any hobbies ?
+i enjoy crocheting , how about you ?
+truth be told , i love just looking up at the clouds .
+that can be enjoyable . where are you from ?
+i have a very active imagination . i love october because dressing up as a character
+are you married ? i am .
+for halloween i mean . des moines . getting divorced .
+sorry to hear that . i am in michigan . originally japan . ia is a great place for cloud watching !
+it is fine though . i have chocolate milkshakes to make me feel better . i love them .
+i prefer vanilla myself .
+it is so flat here and pleasant .
+i would imagine . northen mi is a good spot too .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i am a woman. i love cats. i am married to a man. i like crocheting.
+Conversation History: hey i am pam! what is going on with you?
+hello! my name is ayako. just hanging out with my cats all over me.. you?
+relaxing mostly. do you have any hobbies?
+i enjoy crocheting, how about you?
+truth be told, i love just looking up at the clouds.
+that can be enjoyable. where are you from?
+i have a very active imagination. i love october because dressing up as a character
+are you married? i am.
+for halloween i mean. des moines. getting divorced.
+sorry to hear that. i am in michigan. originally japan. ia is a great place for cloud watching!
+it is fine though. i have chocolate milkshakes to make me feel better. i love them.
+i prefer vanilla myself.
+it is so flat here and pleasant.
+i would imagine. northen mi is a good spot too.
+
+
+Your answer:
+
+Ayako is a woman who loves cats, enjoys crocheting, and is currently dealing with a difficult personal situation involving a divorce. She is from Japan and has a vivid imagination, particularly enjoying the autumn season and cloud-watching. She seems to be a thoughtful and somewhat melancholic individual, reflecting on her past and finding comfort in simple pleasures.
+
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history, preserving key details about the user's persona.
+
+    Args:
+        conversation_text: A string containing the conversation text.  
+
+    Returns:
+       A string summarizing the conversation.
+    
+    Example:
+    summarize_conversation(""""""
+    hey i ampam! what isgoingonwithyou?
+    hello!my name isayako.justhangingoutwithmycatsalloverme..you?
+    relaxingmostly.doyouhaveanyhobbies?
+     i","Pam and Ayako engage in a light conversation where Ayako shares her love for spending time with her cats and her active imagination, particularly enjoying cloud watching and dressing up for Halloween. Pam mentions her hobby of crocheting and expresses sympathy for Ayako's recent divorce, while also sharing her preference for vanilla milkshakes over Ayako's favorite chocolate. They discuss their locations, with Ayako in Des Moines and Pam in Michigan, noting the pleasantness of the flat landscape."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i have three kids. i m a truck driver in the south. i sing in the church choir. i love hot wings.
+Conversation History: hi how are you tonight
+hello , i am doing well . another day , another dollar , driving for the man .
+i know what you mean i am just so simple
+true , you seem to be very simple . what kind of work do you do ?
+i am a fisherman mainly
+a noble pursuit . what kind of bait do you use ?
+wax worms , night crawlers , minos what ever
+if i were a fish , i would be all over fried chicken .
+i love it they are both good
+it is unclear what you are referring to . do you drive ?
+i was refering to bears and i drive to go get sunfish
+oh okay , totally . so do i , but i get paid for it .
+that is amazing where do i sign up
+fill out the necessary paperwork and send it to the rector of your parrish .
+i will have to do that thanks
+you are most welcome . my children are my reason for living .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i have three kids. i m a truck driver in the south. i sing in the church choir. i love hot wings.
+Conversation History: hi how are you tonight
+hello, i am doing well. another day, another dollar, driving for the man.
+i know what you mean i am just so simple
+true, you seem to be very simple. what kind of work do you do?
+i am a fisherman mainly
+a noble pursuit. what kind of bait do you use?
+wax worms, night crawlers, minos what ever
+if i were a fish, i would be all over fried chicken.
+i love it they are both good
+it is unclear what you are referring to. do you drive?
+i was refering to bears and i drive to go get sunfish
+oh okay, totally. so do i, but i get paid for it.
+that is amazing where do i sign up
+fill out the necessary paperwork and send it to the rector of your parrish.
+i will have to do that thanks
+you are most welcome. my children are my reason for living.
+
+
+Your answer:
+
+The user is a truck driving man in the South who enjoys simple pleasures like hot wings, singing in the choir, and fishing. He's a straightforward and somewhat humble individual with a strong sense of family and a love for his children. He describes his work as a fisherman, focusing on catching sunfish, and expresses a deep appreciation for fried chicken, viewing it as a perfect complement to his fishing experience. He seems to be a quiet and content person, prioritizing his family above all else.
+
+```
+```
+","The conversation features a truck driver from the South, who is also a church choir singer and a parent of three, engaging with a fisherman. They discuss their professions, with the truck driver humorously noting the simplicity of life and expressing a love for fried chicken, while the fisherman shares his bait preferences. The truck driver emphasizes the importance of his children, highlighting them as his motivation in life."
+"Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i hate tofu. i work for a large law firm. i drive a prius. we own our home. my wife stays home with our kids.
+Conversation History: hey there how are you ?
+i am good . how about yourself ?
+do you have a family ? never got to know mine
+yes lots of children , my wife cares for them at home .
+i am well , what do you do in your spare time ?
+children equals no free time . how about yourself ?
+how many kids ? i do not even have a sibling . oh poo .
+six children . are you married ?
+i was sent to an adoption agency as a infant .
+sorry to hear , i work for a large adoption law firm .
+awesome , i would not put my kid up for adoption ever .
+i understand . it is difficult all around .
+it is how you like it
+my prius will not fit all our children so we are upgrading to a van soon .
+
+
+Your answer:","Summarize the following conversation history concisely while preserving and keeping in mind key details such as persona of the user. Output only the summary in a paragraph.
+Persona:  i hate tofu. i work for a large law firm. i drive a prius. we own our home. my wife stays home with our kids.
+Conversation History: hey there how are you?
+i am good. how about yourself?
+do you have a family? never got to know mine
+yes lots of children, my wife cares for them at home.
+i am well, what do you do in your spare time?
+children equals no free time. how about yourself?
+how many kids? i do not even have a sibling. oh poo.
+six children. are you married?
+i was sent to an adoption agency as a infant.
+sorry to hear, i work for a large adoption law firm.
+awesome, i would not put my kid up for adoption ever.
+i understand. it is difficult all around.
+it is how you like it
+my prius will not fit all our children so we are upgrading to a van soon.
+
+
+Your answer:
+
+The user is a man who is deeply uncomfortable with tofu, works for a prestigious law firm, owns a home, has a large family of six children, and is a former adoption agency infant. He expresses a strong aversion to tofu and is concerned about the logistical challenges of caring for his children. He is a somewhat reserved and somewhat melancholic individual, prioritizing family and stability above all else.
+
+```python
+
+```
+```python
+def summarize_conversation(conversation_history):
+    """"""
+    Summarizes the conversation history into a concise paragraph.
+
+    Args:
+        conversation_History (str): The conversation history as a string.
+                                  (This is not used in the function, but is included for
+                                 potential future expansion).
+
+    Returns:
+         str: A concise summary of the conversation.
+    
+    Raises:
+       TypeError: if conversation_history is not a string
+    Example:
+    summarize_conversation(""Hey there","The user, who dislikes tofu and works for a large law firm, shares that they have six children and that their wife stays home to care for them, leaving little free time. They mention driving a Prius, which is too small for their family, so they plan to upgrade to a van. The conversation touches on the user's family dynamics and their perspective on adoption, expressing a strong commitment to keeping their children."
